@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compilar el proyecto Java",
+      "type": "shell",
+      "command": "javac",
+      "args": [
+        "--module-path",
+        "C:/Users/herna/Downloads/javafx-sdk-23.0.1/lib",
+        "--add-modules",
+        "javafx.controls,javafx.media,javafx.swing",
+        "-cp",
+        "acm.jar;jl1.0.1.jar",
+        "-d",
+        "bin",
+        "src/component/*.java",
+        "src/game/*.java",
+        "src/maze/*.java",
+        "src/player/*.java"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "Compila el proyecto con JavaFX y ACM"
+    }
+  ]
+}

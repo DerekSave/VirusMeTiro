@@ -1,0 +1,2 @@
+Main-Class: game.MazeGame
+Class-Path: acm.jar jl1.0.1.jar
